@@ -16,6 +16,8 @@ public class Pj_01_ArrayEx {
 
         System.out.println("평균은 : " + (double)result / intArray.length);
 
+
+
     }
 
 
