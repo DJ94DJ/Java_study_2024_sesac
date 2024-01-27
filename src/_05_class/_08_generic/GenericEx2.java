@@ -33,15 +33,14 @@ class Container<T extends Movable> {
         item.move();
     }
 }
+
 public class GenericEx2 {
     public static void main(String[] args) {
+        // Box<String> stringBox = new Box<String>();
         //  Box<String> stringBox = new Box<String>(); number만 들어가기 때문에 오류난다!
+        Box<Double> doubleBox = new Box<>(); //그래서 더블로 하면 오류안남 ㅎ
 
-        Box<Double> doubleBox = new Box<Double>();  // 그래서 더블로 하면 오류안남 ㅎ
-
-        // Case 2
-        Container<Car> carContainer = new Container<>(new Car()); // car의 객채를 넣어준 것
-
-        //
+        // case 2
+        Container<Car> carContainer = new Container<>(new Car());
     }
 }
